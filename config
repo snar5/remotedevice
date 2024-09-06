@@ -1,0 +1,11 @@
+Host *
+        ServerAliveInterval 240
+        IPQoS throughput
+        ServerAliveCountMax 3
+        VisualHostKey yes
+
+Host bastion
+        HostName 45.a.a.a
+        User ncc
+        Port 22
+        IdentityFile ~/.ssh/id_ed25519
